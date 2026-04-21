@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Img/background.png);
+    background-size: cover;
+}
+
+main,
+header {
+    width: 60%;
+    border: black solid 1px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 100px;
+        list-style: none;
+        align-items: center;
+    }
+
+    nav img {
+        height: 100px;
+    }
+
+    main img {
+        height: 200px;
+    }
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    p,
+    h1,
+    h2,
+    li {
+        color: aliceblue;
+    }
+
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+}

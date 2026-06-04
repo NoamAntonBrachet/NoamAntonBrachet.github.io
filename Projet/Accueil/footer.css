@@ -1,0 +1,99 @@
+/* CSS Here */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    footer {
+        background-image: url("footer-header-fond.svg");
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        a{
+            color: white;
+            font-size: 17px;
+            margin: 10px 10px 10px 0;
+            transition: 0.4s;
+        }
+        a:hover{
+            font-size: 18px;
+            color: wheat;
+        }
+        h3{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+        p{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+        }
+        >div:first-child{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                margin-left: 30px;
+
+                ul{
+                    list-style: none;
+                    padding: 0;
+                }
+
+                .bt-notre-histoire {
+                    button {
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        height: 35px;
+                        width: 150px;
+                        font-weight: bold;
+                        transition: 0.4s;
+                        border-radius: 8px;
+                        border: none;
+                        color: rgb(85, 0, 196);
+                    }
+
+                    button:hover {
+                        background-color: rgb(255, 255, 255, 0.2);
+                        transform: rotate3d(0, 1, 0, 360deg);
+                        transition: background 0.2s ease, transform 0s ease;
+                        border-radius: 8px;
+                        color: white;
+                    }
+                }
+
+            }
+            div:last-child {
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    li{
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+        >div:last-child {
+            margin-left: auto;
+            margin-right: auto;
+                ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                li{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

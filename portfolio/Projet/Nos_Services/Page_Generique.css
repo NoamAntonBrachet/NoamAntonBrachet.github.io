@@ -1,0 +1,108 @@
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0 10px 0 10px;
+    color: rgb(50,0,120);
+    font-weight: bold;
+    font-size: 55pt;
+}
+
+main {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0 10px 0 10px;
+
+
+
+    section {
+        display: grid;
+        column-gap: 10px;
+
+        &:nth-child(odd) {
+            grid-template-columns: 450px 1fr;
+
+            h2 {
+                grid-area: auto / 1 / auto / span 2;
+                justify-self: start;
+            }
+
+            div {
+                grid-area: auto / 2 / auto / 2;
+            }
+
+            img {
+                grid-area: auto / 1 / auto / 1;
+            }
+        }
+
+        &:nth-child(even) {
+            grid-template-columns: 1fr 450px;
+
+            h2 {
+                grid-area: auto / 1 / auto / span 2;
+                justify-self: end;
+            }
+
+            div {
+                grid-area: auto / 1 / auto / 1;
+            }
+
+            img {
+                grid-area: auto / 2 / auto / 2;
+            }
+        }
+    }
+
+    h2 {
+        color: rgb(85, 0, 196);
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 42pt;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 24pt;
+        }
+    }
+
+
+    img {
+        min-width: none;
+        max-width: 100%;
+    }
+
+
+
+}
+
+body>section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(85, 0, 196);
+    border: none;
+    border-radius: 13px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(85, 0, 196);
+    color: white;
+    width: 270px;
+    justify-self: center;
+}

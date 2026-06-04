@@ -610,6 +610,9 @@ footer {
   user-select: none;
   z-index: 50;
 }
+img{
+  size: 10px;
+}
 
 /* ── ANIMATIONS ── */
 @keyframes fade-up {
